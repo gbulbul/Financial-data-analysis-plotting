@@ -17,3 +17,11 @@ The other exercise is on observing differences between three different volatilit
 
 ![image](https://github.com/user-attachments/assets/9769029c-7f19-45e4-8bd7-3c8dc82a238a)
 
+Closing price predictions by LSTM on the selected stocks with RMSE values 21.808815136954323, 79.83239051726497, 67.64406492939638, respectively for MSFT, AMZN, NVDA.
+
+
+![image](https://github.com/user-attachments/assets/d382cbc3-8f0a-4ba4-ac0a-470ce77cf301)
+
+![image](https://github.com/user-attachments/assets/5c2e4675-2095-4daf-8734-7ac9e85bbaab)
+
+![image](https://github.com/user-attachments/assets/68ffc6cf-4479-4bd5-84b6-2ee671c1d197)
