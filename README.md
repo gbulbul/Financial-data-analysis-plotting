@@ -19,9 +19,8 @@ The other exercise is on observing differences between three different volatilit
 
 Closing price predictions by LSTM on the selected stocks with RMSE values 21.808815136954323, 79.83239051726497, 67.64406492939638, respectively for MSFT, AMZN, NVDA.
 
+![image](https://github.com/user-attachments/assets/d4285e40-403e-48ff-a794-31e4272f7f3a)
 
-![image](https://github.com/user-attachments/assets/d382cbc3-8f0a-4ba4-ac0a-470ce77cf301)
+![image](https://github.com/user-attachments/assets/326d30e6-b700-4538-a90b-5b43bd51147d)
 
-![image](https://github.com/user-attachments/assets/5c2e4675-2095-4daf-8734-7ac9e85bbaab)
-
-![image](https://github.com/user-attachments/assets/68ffc6cf-4479-4bd5-84b6-2ee671c1d197)
+![image](https://github.com/user-attachments/assets/63dac613-5d3c-4654-83d3-9fefb8c12aef)
