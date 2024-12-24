@@ -64,9 +64,11 @@ class Predicting_closing_price_with_LSTM_model:
         predictions1 = model.predict(x_test)
         predictions = scaler.inverse_transform(predictions1)
         return predictions
-    def plotting(f,train,valid,title):
+    def plotting(f,train,valid,title,len_of_data):
         plt.title('Model for' +1*" "+ title)
         plt.xlabel('Date', fontsize=18)
+        customized_xticks=[number for number in range(100, len_of_data, 500)]
+        plt.xticks(customized_xticks,rotation=45)
         plt.ylabel('Close Price USD ($)', fontsize=18)
         plt.plot(train['Close'])
         plt.plot(valid[['Close', 'Predictions']])
@@ -79,11 +81,14 @@ if __name__=="__main__":
     stocks=['AAPL','MSFT','AMZN','NVDA']
     for idx,i in enumerate(stocks):
         direc='C:/Users/gbulb/Downloads/stock_market_data/nasdaq/csv/' + str(i) +'.csv'
-        df = pd.read_csv(direc)
+        df = pd.read_csv(direc, index_col=0)
+        len_of_data=len(df)
         title=i
         plt.title('Close Price History')
         plt.plot(df['Close'])
         plt.xlabel('Date', fontsize=18)
+        customized_xticks= [number for number in range(100, len_of_data, 500)]
+        plt.xticks(customized_xticks,rotation=45)
         plt.ylabel('Close Price USD ($)', fontsize=18)
         plt.show()
         #Focusing on sole 'Close' variable
@@ -113,6 +118,6 @@ if __name__=="__main__":
         train = data[:training_data_len]
         valid = data[training_data_len:]
         valid['Predictions'] = predictions
-        f=plt.figure(figsize=(16,6))
+        f=plt.figure(figsize=(26,16))
     
-        Predicting_closing_price_with_LSTM_model.plotting(f,train,valid,title)
+        Predicting_closing_price_with_LSTM_model.plotting(f,train,valid,title,len_of_data)
